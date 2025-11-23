@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>UMURAGE marketing</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="light">
+<header class="main-header">
+  <div class="brand">
+    <img src="images/logo.png" alt="UMURAGE logo" class="logo">
+    <div class="brand-text">
+      <h1>UMURAGE marketing</h1>
+      <p class="tag">Futuristic tech marketplace</p>
+    </div>
+  </div>
+
+  <div class="search-cart">
+    <input id="searchInput" placeholder="Search products..." />
+    <div class="cart-icon" id="openCart">🛒 <span id="cart-count">0</span></div>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="user-login.html">User Login</a>
+    <a href="login.html">Admin Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Welcome to UMURAGE marketing</h2>
+    <p>Tomorrow's tech, today. Shop futuristic gadgets and essentials.</p>
+    <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+  </div>
+  <img class="hero-image" src="images/hero.jpg" alt="hero">
+</section>
+
+<section id="products" class="products container">
+  <h2>Featured Products</h2>
+  <div id="productGrid" class="product-grid"></div>
+</section>
+
+<section id="about" class="about container">
+  <h2>About UMURAGE marketing</h2>
+  <p>UMURAGE marketing connects innovating tech products to forward-thinking customers. Built with a futuristic, clean interface.</p>
+</section>
+
+<section id="contact" class="contact container">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:info@umurage.example">info@umurage.example</a></p>
+  <p>Phone: +250 7xx xxx xxx</p>
+  <p>Address: Kigali, Rwanda</p>
+</section>
+
+<!-- Cart popup -->
+<div id="cartPopup" class="modal">
+  <div class="modal-inner">
+    <h3>Your Cart</h3>
+    <div id="cartItems"></div>
+    <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+    <button id="checkoutBtn">Checkout</button>
+    <button id="closeCart">Close</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 UMURAGE marketing — Futuristic tech style</p>
+</footer>
+</body>
+</html>

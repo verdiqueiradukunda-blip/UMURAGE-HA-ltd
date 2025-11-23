@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>User Dashboard | UMURAGE marketing</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header class="main-header">
+  <div class="brand-text"><h1>User Dashboard</h1></div>
+  <nav><a href="index.html">Home</a> <a href="#" id="userLogout">Logout</a></nav>
+</header>
+
+<div class="container">
+  <section class="profile">
+    <div class="profile-card">
+      <img src="images/avatar.png" class="avatar" alt="avatar">
+      <h3 id="dashName">Name</h3>
+      <p id="dashEmail">email@example.com</p>
+    </div>
+  </section>
+
+  <section class="cart-summary">
+    <h2>Your Cart</h2>
+    <div id="cartItemsContainer"></div>
+    <p>Total: $<span id="cartTotal">0.00</span></p>
+    <button id="checkoutNow">Checkout</button>
+  </section>
+</div>
+
+</body>
+</html>

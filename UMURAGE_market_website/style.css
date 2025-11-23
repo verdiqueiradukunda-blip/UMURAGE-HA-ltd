@@ -1,0 +1,55 @@
+/* UMURAGE marketing - futuristic tech style */
+:root{
+  --accent:#6C63FF;
+  --bg:#0f1724;
+  --card:rgba(255,255,255,0.04);
+  --glass: rgba(255,255,255,0.06);
+  --muted:#9aa4bf;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:linear-gradient(180deg,#020617 0%, #071233 100%);color:#e6eef8}
+.container{max-width:1100px;margin:30px auto;padding:0 20px}
+.main-header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:transparent}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:48px;height:48px;object-fit:cover;border-radius:8px}
+.brand-text h1{margin:0;font-size:1.2rem}
+.brand-text p{margin:0;font-size:0.8rem;color:var(--muted)}
+.nav-links a{color:var(--muted);margin-left:16px;text-decoration:none}
+.search-cart{display:flex;align-items:center;gap:10px}
+#searchInput,#search{padding:8px;border-radius:8px;border:none;background:var(--card);color:#e6eef8}
+.cart-icon{background:var(--glass);padding:8px;border-radius:8px;cursor:pointer}
+.hero{position:relative;display:flex;align-items:center;justify-content:space-between;padding:40px 20px;gap:20px}
+.hero-content{max-width:600px}
+.hero h2{font-size:2rem;margin:0 0 10px}
+.hero p{color:var(--muted)}
+.hero button{background:var(--accent);border:none;padding:10px 16px;border-radius:10px;color:white;cursor:pointer}
+.hero-image{width:380px;border-radius:12px;object-fit:cover;box-shadow:0 10px 30px rgba(108,99,255,0.15)}
+.products h2{margin-top:0}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+.card{background:var(--card);padding:14px;border-radius:12px;backdrop-filter: blur(6px);box-shadow:0 8px 20px rgba(2,6,23,0.6)}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+.card h3{margin:8px 0 4px}
+.card p{margin:0;color:var(--muted)}
+.card button{margin-top:8px;padding:8px 12px;border-radius:8px;border:none;background:var(--accent);color:white;cursor:pointer}
+.about, .contact{background:transparent;padding:20px;border-radius:10px;color:var(--muted)}
+footer{padding:20px;text-align:center;color:var(--muted);margin-top:30px}
+.modal{display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.6);align-items:center;justify-content:center}
+.modal-inner{background:#071428;padding:20px;border-radius:12px;min-width:320px}
+.login-page .container{height:80vh;display:flex;align-items:center;justify-content:center}
+.login-box{width:360px;padding:28px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+.input{width:100%;padding:10px;margin:8px 0;border-radius:8px;border:none;background:transparent;color:inherit}
+.remember{color:var(--muted);font-size:0.9rem}
+.small{color:var(--muted);font-size:0.9rem}
+.center{display:flex;align-items:center;justify-content:center}
+.admin-section{background:var(--glass);padding:16px;border-radius:12px;margin-bottom:20px}
+.admin-table{width:100%;border-collapse:collapse;color:var(--muted)}
+.admin-table th, .admin-table td{padding:10px;border-bottom:1px solid rgba(255,255,255,0.03);text-align:left}
+.product-form{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.product-form input[type=file]{background:transparent;color:var(--muted)}
+.admin-form{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+#productTable img{width:60px;height:50px;object-fit:cover;border-radius:6px}
+.profile-card{background:var(--card);padding:16px;border-radius:12px;display:inline-block;text-align:center}
+.avatar{width:90px;height:90px;border-radius:50%;object-fit:cover;margin-bottom:8px}
+.cart-summary{background:var(--card);padding:16px;border-radius:12px}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;color:var(--muted);cursor:pointer}
+@media(max-width:800px){.hero{flex-direction:column}.hero-image{width:100%;max-height:280px}}
